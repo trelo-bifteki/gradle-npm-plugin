@@ -1,0 +1,4 @@
+import com.trelobifteki.gradle.npm.NpmPlugin
+
+apply plugin: NpmPlugin
+
