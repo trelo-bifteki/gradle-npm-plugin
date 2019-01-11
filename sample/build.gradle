@@ -1,3 +1,9 @@
-plugins {
-  id 'java'
+buildscript {
+	dependencies {
+		classpath 'de.trelobifteki:npm-plugin:0.1'
+	}
 }
+
+import de.trelobifteki.gradle.npm.NpmPlugin
+
+apply plugin: NpmPlugin

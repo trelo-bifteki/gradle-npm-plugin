@@ -7,8 +7,12 @@ repositories {
   jcenter()
 }
 
+group 'de.trelobifteki'
+version '0.1'
+
 dependencies {
   implementation gradleApi()
+  implementation localGroovy()
   testImplementation ('org.spockframework:spock-core:1.1-groovy-2.4') {
 	  exclude group: 'org.codehaus.groovy'
   }
