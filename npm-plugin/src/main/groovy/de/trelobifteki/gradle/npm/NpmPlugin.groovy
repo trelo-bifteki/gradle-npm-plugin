@@ -16,6 +16,8 @@ class NpmPlugin implements Plugin<Project> {
 		this.project = project;
 		
 		extension = project.extensions.create(NpmExtension.NAME, NpmExtension, project);
+		
+		addTasks()
 	}
 	
 	private void addTasks() {

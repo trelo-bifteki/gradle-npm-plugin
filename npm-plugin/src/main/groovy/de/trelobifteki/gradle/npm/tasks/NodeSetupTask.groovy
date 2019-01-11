@@ -14,8 +14,13 @@ class NodeSetupTask extends DefaultTask {
 
 	private static final Logger logger = Logging.getLogger(NodeSetupTask)	
 	
+	NodeSetupTask() {
+		this.group = "npm"
+		this.description = "Download and setup node"
+	}
+	
 	@TaskAction
 	void setupNode() {
-		logger.infoEnabled('Setting up')
+		logger.info 'Hello'
 	}
 }
